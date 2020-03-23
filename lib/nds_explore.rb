@@ -8,9 +8,10 @@ require 'pry'
 
 def pretty_print_nds(nds)
   # Change the code below to pretty print the nds with pp
+  # nil
+  
   pp nds
-  nil
-
+  
 end
 
 def print_first_directors_movie_titles
@@ -57,5 +58,8 @@ def print_first_directors_movie_titles
     i += 1
   
   end
+  
+  
+  
   
 end
