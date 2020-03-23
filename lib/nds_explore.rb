@@ -31,35 +31,41 @@ def print_first_directors_movie_titles
 
 # [0]->[:movies]->[0]->[:title]
 
- i = 0 
+# i = 0 
   
-  while i < directors_database.length do
-    name_index = 0 
+#   while i < directors_database.length do
+#     name_index = 0 
     
-    while name_index < directors_database[i].length do
-    ######## even name_index incresed the number it still run same data of "Stephen Spielberg"
-    ######## we only needs "Stephen Spielberg" data so after we find out break the loop
+#     while name_index < directors_database[i].length do
+#     ######## even name_index incresed the number it still run same data of "Stephen Spielberg"
+#     ######## we only needs "Stephen Spielberg" data so after we find out break the loop
       
-      if directors_database[i][:name] == "Stephen Spielberg"
-        movies = directors_database[i][:movies]
-        inner_index = 0 
+#       if directors_database[i][:name] == "Stephen Spielberg"
+#         movies = directors_database[i][:movies]
+#         inner_index = 0 
         
-        while inner_index < movies.length do
+#         while inner_index < movies.length do
         
-         puts directors_database[i][:movies][inner_index][:title]
-         inner_index += 1
-        end
+#         puts directors_database[i][:movies][inner_index][:title]
+#         inner_index += 1
+#         end
         
-      end
-      break
-      name_index += 1
+#       end
+#       break
+#       name_index += 1
     
-    end
-    i += 1
+#     end
+#     i += 1
   
+#   end
+  
+  movies = directors_database[0][:movies]
+  index = 0
+
+  while index < movies.length do
+    titles = ss_movies[index][:title]
+    puts titles
+    index +=1
   end
-  
-  
-  
   
 end
